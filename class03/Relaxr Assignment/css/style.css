@@ -1,0 +1,235 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: David Klaassen
+Developer @GA in DC
+*/
+
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/**************
+Utility Classes
+***************/
+
+/* Box Model Hack */
+html {
+ box-sizing: border-box;
+}
+​*, *​:before, *:after {
+ box-sizing: inherit;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/* Background image hack */
+header{
+	background: url('https://github.com/ga-students/FEWD-DC-17/blob/master/Week_02_Styling/Assignment/starter_code/images/header_bg.jpg?raw=true') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 200px;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+.Container{
+	position: relative;
+	width: 100%;
+}
+
+.Container h2{
+	font-family: 'Open Sans', sans-serif, helvetica;
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.Navigation{
+	width: 20%;
+	margin: 0 80px;
+	position: relative;
+}
+
+.Navigation h1{
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-size: 24px;
+	font-weight: 800;
+	color: white;
+}
+
+
+.CTA{
+	width: 8%;
+	margin: auto;
+	position: relative;
+	padding: 8px 30px;
+	background-color: #f9e42e;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.CTA a {
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-weight: 800;
+	color: #033048;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.Benefits{
+	position: relative;
+	width: 100%;
+	background-color: #f0efef;
+	overflow: auto;
+}
+
+.Benefits h2{
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-weight: 600;
+	font-size: 20px;
+	margin: 30px 50px;
+	padding-top: 40px;
+}
+
+.Benefits p{
+	margin: 30px 50px;
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+.Benefits ul{
+	margin: 20px 100px;
+	padding-bottom: 50px;
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-weight: 300;
+
+}
+
+footer{
+	background-image: url('https://github.com/ga-students/FEWD-DC-17/blob/master/Week_02_Styling/Assignment/starter_code/images/testimonial_bg.jpg?raw=true');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+}
+
+.Testimonial blockquote{
+	width: 50%;
+	margin: auto; 
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-weight: 300;
+	font-style: italic;
+	color: white;
+	padding-top: 50px;
+}
+
+.Testimonial p{
+	text-align: center;	
+	font-size: 18px;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif, helvetica;
+	color: white;
+}
+
+.Sign-Up{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	background-color: #f9e42e;
+	overflow: auto;
+	margin-top: 40px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.Sign-Up a{
+	position: relative;
+	width: 15%;
+	background-color: #033048;
+	margin-top: 20px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-weight: 800;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 8px 60px;
+}
+
+.End-Footer{
+	background:#121212;
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	padding-bottom: 50px;
+}
+
+.End-Footer h2{
+	font-family: 'Open Sans', sans-serif, helvetica;
+	color: #f9e42e;
+	font-size: 24px;
+	font-weight: 800;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.End-Footer p{
+	font-family: 'Open Sans', sans-serif, helvetica;
+	font-size: 9px;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+}
+
+.Social {
+	text-align: center;
+}
+
+.Social img{
+	margin: 50px 30px;
+}
+
+
+
+
+
