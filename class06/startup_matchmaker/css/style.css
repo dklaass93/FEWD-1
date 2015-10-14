@@ -1,0 +1,158 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Base Styles */
+
+body{
+	color: #333;
+	font-family: 'Open Sans', arial, sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+header{
+	background-color: black;
+	padding:10px;
+	border-bottom: 4px solid #f9e42e;	
+}
+
+header h1{
+	font-family: 'Merriweather', sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	color: #f9e42e;
+	float: left;
+	margin-top: -20px;
+}
+
+nav ul{
+	list-style: none;
+	clear: both;
+	margin-left: 200px;
+}
+
+nav li{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	display: inline;
+	margin-right: 75px;
+}
+
+nav a{
+	text-decoration: none;
+	color:white;
+}
+
+.Large-Nav a{
+	font-family: 'Oswald', sans-serif;
+	font-size: 32px;
+	font-weight: 700;
+	color: white;
+}
+
+section{
+	background-color: #606161;
+	padding:10px;
+	height: 100px;
+}
+
+section p{
+	font-family: 'Merriweather', sans-serif;
+	font-weight: 700italic;
+	text-align: center;
+	font-size: 32px;
+	margin-top: -5px;
+}
+
+.linethrough{
+	text-decoration: line-through;
+}
+
+.underline{
+	text-decoration: underline;
+	color: yellow;
+}
+
+article{
+	background-image: url(../images/coworking.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 10px;
+	width: 100%;
+	height: 650px;
+}
+
+.Create-Profile{
+	background-color: rgba(211,211,211,0.5);
+	position: relative;
+	width: 33.33%;
+	border: 1px solid black;
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 350px;
+	overflow: auto;
+}
+
+.Create-Profile p{
+	margin-bottom: 40px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+
+}
+
+.Create-Profile a{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #f9e42e;
+	text-decoration: none;
+	padding: 10px 50px;
+	border-radius: 5px;
+	color: #033048;
+	font-family: 'Oswald', sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.sidebars{
+	
+}
+
+aside{
+	background: green;
+	padding: 10px;
+	width: 33.33%;
+	float: left;
+}
+
+footer{
+	background-color: black;
+	padding: 10px;
+	clear: both;
+}
+
+.placeholder{
+	height: 150px;
+	padding: 20px;
+}
