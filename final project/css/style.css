@@ -18,10 +18,20 @@ a:focus {
 
 
 header {
-background-image: url("../images/ovo.jpg");
+background-image: url("http://wordonroad.net/wp-content/uploads/2015/02/drakesydney2.jpg");
 background-size: cover;
 width: 100vw;
 height: 100vh;
+position: relative;
+}
+header:before {
+	content: "";
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0,0,0,.6);
 }
 
 .intro__content {
@@ -45,29 +55,13 @@ height: 100vh;
 }
 
 /* Main content */
-.items-wrap {
+.items-wrap{
 	position: relative;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-wrap: wrap;
 	flex-wrap: wrap;
-	padding: 250px 5px 0;
-}
-
-.items-wrap::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 50%;
-	height: 100%;
-	background: #2a2e39;
-	content: '';
-	opacity: 1;
-	-webkit-transition: opacity 0.6s;
-	transition: opacity 0.6s;
-	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-	pointer-events: none;
+	flex-direction: row;
+	padding: 5px 0;
+	margin: auto;
 }
 
 .container--open .items-wrap::after {
@@ -96,6 +90,7 @@ height: 100vh;
 	transform: translate3d(0, -50%, 0) scale3d(1.2, 1.2, 1);
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
 	transition: transform 0.5s, opacity 0.5s;
+	z-index: 1;
 }
 
 .item:hover .item__image {
@@ -122,6 +117,47 @@ height: 100vh;
 	-webkit-transform: translate3d(0, 20px, 0);
 	transform: translate3d(0, 20px, 0);
 }
+
+.inner {
+	background-size: 170%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    transition: all .15s;
+}
+.item:hover .inner {
+	background-size: 150%;
+}
+.item:nth-of-type(1) .inner {
+	background-image: url('../images/bigsean.jpg');
+}
+.item:nth-of-type(2) .inner {
+	background-image: url('../images/weeknd.jpg');
+}
+.item:nth-of-type(3) .inner {
+	background-image: url('../images/partynextdoor.jpg');
+}
+.item:nth-of-type(4) .inner {
+	background-image: url('../images/yg.jpg');
+}
+.item:nth-of-type(5) .inner {
+	background-image: url('../images/jeremih.jpg');
+}
+.item:nth-of-type(6) .inner {
+	background-image: url('../images/drake.jpg');
+}
+.item:nth-of-type(7) .inner {
+	background-image: url('../images/lilwayne.jpg');
+}
+.item:nth-of-type(8) .inner {
+	background-image: url('../images/frankocean.jpg');
+}
+.item:nth-of-type(9) .inner {
+	background-image: url('../images/jcole.jpg');
+}
+
 
 
 /* Media Queries */
@@ -156,4 +192,6 @@ height: 100vh;
 	.intro__title {
 		font-size: 2em;
 	}
+
+	
 }
