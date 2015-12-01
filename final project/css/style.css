@@ -8,6 +8,7 @@ body {
 	font-weight: 400;
 	font-size: 1rem;
 	font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
+	overflow: hidden;
 }
 
 a:hover,
@@ -18,12 +19,14 @@ a:focus {
 
 
 header {
-background-image: url("http://wordonroad.net/wp-content/uploads/2015/02/drakesydney2.jpg");
-background-size: cover;
-width: 100vw;
-height: 100vh;
-position: relative;
+	background-image: url("http://wordonroad.net/wp-content/uploads/2015/02/drakesydney2.jpg");
+	background-size: cover;
+	background-color: transparent;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
 }
+
 header:before {
 	content: "";
 	left: 0;
@@ -32,6 +35,39 @@ header:before {
 	height: 100%;
 	position: absolute;
 	background: rgba(0,0,0,.6);
+	transition: all .25s ease;
+}
+
+.view-content{
+	padding: 20px 60px;
+	border: 2px solid white;
+	color: white;
+	text-decoration: none;
+	float: right;
+	font-family: "Playfair Display", Georgia, serif;
+}
+
+.view-content svg{
+	display: none;
+}
+
+header.active:before{
+	background: rgba(0,0,0,1);
+}
+
+header.active .view-content {
+	position: relative;
+	top: 20px;
+	border: none;
+	padding: 0 60px;
+}
+
+header.active .view-content svg{
+	display: block;
+}
+
+header.active .view-content span{
+	display: none;
 }
 
 .intro__content {
@@ -54,13 +90,35 @@ header:before {
 	line-height: 2.5;
 }
 
+
+.display-active{
+	display: none;
+	padding: 2rem 0;
+}
+
+.display-active h2{
+	margin: 0;
+}
+
+.active .display-active{
+	display: block;
+	color: white;
+	font-size: 30px;
+	position: relative;
+	margin: 0;
+	top: 130px;
+	left: 500px;
+
+}
+
+
 /* Main content */
 .items-wrap{
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	padding: 5px 0;
+	padding: 0;
 	margin: auto;
 }
 
