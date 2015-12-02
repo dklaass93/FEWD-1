@@ -4,7 +4,7 @@ $(document).ready(function(){
 	refreshScroll();
 
 	
-	$('.view-content').click(function(){
+	$('.view-content, .display-active svg').click(function(){
 
 		if( $('header').hasClass('active')){
 			
@@ -28,7 +28,8 @@ function slideHeaderUp(event){
 	event.preventDefault();
 	var activeState = $('.display-active').outerHeight();
 	console.log(activeState);
-	$(window).scrollTo('#container-open', 1000, {offset: - activeState -15,
+	$(window).scrollTo('#container-open', 1000, {
+		offset: - activeState + 35,
 		onAfter:function() {
 			$('header').addClass('active');
 			$('body').css('overflow','inherit');
