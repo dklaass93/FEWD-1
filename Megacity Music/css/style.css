@@ -1,0 +1,85 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+body {
+	background-color: white;
+	color: white;
+	font-weight: 400;
+	font-size: 1rem;
+	font-family: "Black Ops One", Helvetica, sans-serif;
+	overflow: hidden;
+}
+
+.container{
+	width: 100vw;
+	height: 100vh;
+}
+
+header{
+	background-color: #2B2B2B;
+	width: 100vw;
+	height: 200px;
+}
+
+
+ul{
+	float: right;
+	margin-right: 40px;
+}
+
+li{
+	display: inline;
+	list-style: none;
+	margin-left: 20px;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.single-item{
+  width: 40%;
+}
+
