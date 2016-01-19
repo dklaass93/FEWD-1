@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-$("#contact").hover(function() {
-	$("#login-form").slideToggle();
+$("#contact").click(function() {
+	$("#connect-form-wrap").slideToggle();
 });
 
 
-});
+})
