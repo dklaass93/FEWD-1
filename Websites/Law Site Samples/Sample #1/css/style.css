@@ -1,0 +1,373 @@
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+html { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Base Styles */
+
+body{
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+header {
+  background-image: url(../images/lawfirm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+header:before {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0,0,0,.4);
+  transition: all .25s ease;
+}
+
+.call-now{
+  width: 100vw;
+  height: 40px;
+  background-color: black;
+}
+
+.call-now h3{
+  float: right;
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+header h1{
+  position: relative;
+  top: 0px;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-top: 0px;
+  color: #344152;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.light{
+  color: white;
+  font-weight: 700;
+}
+
+nav ul{
+  list-style: none;
+  float:right;
+  position: relative;
+  top: -75px;
+}
+
+nav li{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline;
+  margin-right: 25px;
+}
+
+nav a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+ }
+
+ nav a:hover{
+  color: #26466D;
+ }
+
+ nav a:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background-color: #26466D;
+  visibility: hidden;
+    -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+ }
+
+nav a:hover:before{
+   visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+nav b:hover{
+  color: #26466D;
+  cursor: pointer;
+}
+
+
+.connect{
+  color: #fff;
+  border: 2px solid white;
+  padding: 7.5px 40px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+
+/* Opt In Form */
+
+.container > header {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding: 2.875em 1.875em 1.875em;
+}
+
+.container > header h1 {
+  font-size: 2.125em;
+  line-height: 1.3;
+  margin: 0 0 0.6em 0;
+  float: left;
+  font-weight: 400;
+}
+
+.container > header > span {
+  display: block;
+  position: relative;
+  z-index: 9999;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  padding: 0 0 0.6em 0.1em;
+}
+
+.container > header > span span:after {
+  width: 30px;
+  height: 30px;
+  left: -12px;
+  font-size: 50%;
+  top: -8px;
+  font-size: 75%;
+  position: relative;
+}
+
+.container > header > span span:hover:before {
+  content: attr(data-content);
+  text-transform: none;
+  text-indent: 0;
+  letter-spacing: 0;
+  font-weight: 300;
+  font-size: 110%;
+  padding: 0.8em 1em;
+  line-height: 1.2;
+  text-align: left;
+  left: auto;
+  margin-left: 4px;
+  position: absolute;
+  color: #47a3da;
+  background: #fff;
+}
+
+.container > header nav {
+  float: right;
+  text-align: center;
+}
+
+.container > header nav a {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  width: 2.5em;
+  height: 2.5em;
+  background: #47a3da;
+  border-radius: 50%;
+  margin: 0 0.1em;
+  border: 4px solid #fff;
+}
+
+.container > header nav a > span {
+  display: none;
+}
+
+.container > header nav a:hover:before {
+  content: attr(data-info);
+  color: #fff;
+  position: absolute;
+  width: 600%;
+  top: 120%;
+  text-align: right;
+  right: 0;
+  pointer-events: none;
+}
+
+.container > header nav a:hover {
+  background: #fff;
+}
+
+.bp-icon:after {
+  font-family: 'bpicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container > header nav .bp-icon:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 2;
+  text-indent: 0;
+}
+
+.container > header nav a:hover:after {
+  color: #47a3da;
+}
+
+.bp-icon-next:after {
+  content: "\e000";
+}
+.bp-icon-drop:after {
+  content: "\e001";
+}
+.bp-icon-archive:after {
+  content: "\e002";
+}
+.bp-icon-about:after {
+  content: "\e003";
+}
+.bp-icon-prev:after {
+  content: "\e004";
+}
+
+.main {
+  width: 100%;
+  padding: 0 2em 3em;
+  max-width: 100em;
+}
+
+@media screen and (max-width: 55em) {
+
+  .container > header h1,
+  .container > header nav {
+    float: none;
+  }
+
+  .container > header > span,
+  .container > header h1 {
+    text-align: center;
+  }
+
+  .container > header nav {
+    margin: 0 auto;
+  }
+
+  .container > header > span {
+    text-indent: 30px;
+  }
+}
+
+/* CTA */
+
+.CTA{
+  font-weight: 400;
+  position: relative;
+  left: 30%;
+  top: 20%;
+}
+
+.CTA h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: white;
+}
+
+.CTA a{
+  text-decoration: none;
+  position: relative;
+  top: 25%;
+  left: 15%;
+  color: #fff;
+  border: 2px solid white;
+  padding: 15px 50px;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+
+.CTA a:hover,
+.CTA a:active{
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+.light-black{
+  color: black;
+  font-weight: 400;
+}
+
+.logo-container{
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  margin-top: 350px;
+  margin-left: 40px;
+}
+
+.preview{
+  position: relative;
+  height: 50px;
+  width: 75px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
