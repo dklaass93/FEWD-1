@@ -139,8 +139,58 @@ nav b:hover{
 
 /* Opt In Form Field Structure */
 
-#connect-form-wrap{
-  display: hidden;
+#outer-connect-form-wrapper{
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  padding: 1rem;
+  z-index: 0;
+}
+
+#connect-form-wrapper {
+  display: none;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%,-50%);
+       -ms-transform: translate(-50%,-50%);
+           transform: translate(-50%,-50%);
+   background: #fff;
+   width: 80%;
+   max-width: 519px;
+   padding: 1rem;
+   margin: 0 auto;
+}
+
+#connect-form-close {
+    border-radius: 100%;
+    padding: 1rem;
+    position: absolute;
+    z-index: 12;
+    right: 4px;
+    top: 4px;
+    cursor: pointer;
+}
+
+#connect-form-close:before{
+    content: '\00d7';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 800;
+    color: #d9d9d9;
+}
+
+#connect-form-wrapper .cbp-mc-column {
+    width: 100%;
 }
 
 .cbp-mc-form {
@@ -165,7 +215,7 @@ nav b:hover{
 
 .cbp-mc-form label {
   display: block;
-  padding: 40px 5px 5px 2px;
+  padding: 20px 5px 5px 2px;
   font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -183,11 +233,12 @@ nav b:hover{
   display: block;
   width: 100%;
   background: transparent;
+  margin-top: 10px;
 }
 
 .cbp-mc-form input,
 .cbp-mc-form textarea {
-  border: 3px solid #fff;
+  border: 1px solid #b0b6bb;
 }
 
 .cbp-mc-form textarea {
@@ -255,19 +306,29 @@ nav b:hover{
 .CTA{
   font-weight: 400;
   position: relative;
-  left: 30%;
-  top: 20%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .CTA h2{
+  position: relative;
+  left: 290px;
+  top: 80px;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
-  margin-bottom: 50px;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
+  display: inline-block;
+  text-align: center;
 }
 
-.CTA a{
+.CTA-buttons{
+  position: absolute;
+  bottom: 48%;
+  right: 43%
+}
+
+.ghost-button{
   text-decoration: none;
   position: relative;
   top: 25%;
@@ -275,41 +336,25 @@ nav b:hover{
   color: #fff;
   border: 2px solid white;
   padding: 15px 50px;
+  margin-right: 15px;
   transition: background-color 0.2s ease-out,
               color 0.2s ease-out;
 }
 
-.CTA a:hover,
-.CTA a:active{
+.ghost-button:hover,
+.ghost-button:active{
   background-color: #fff;
   color: #000;
   transition: background-color 0.3s ease-in,
               color 0.3s ease-in;
 }
 
-.light-black{
-  color: black;
-  font-weight: 400;
+footer{
+  height: 2000px;
+  width: 100vw;
+  background: black;
 }
 
-.logo-container{
-  position: relative;
-  left: 50%;
-  display: inline-block;
-  margin-top: 350px;
-  margin-left: 40px;
-}
-
-.preview{
-  position: relative;
-  height: 50px;
-  width: 75px;
-}
-
-.container img {
-    width: 100%;
-    height: auto;
-}
 
 
 
